@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+
+        <ui:composition template="./../../Tema/principal.xhtml">
+
+            <ui:define name="left">
+                <div class="sidebar" data-active-color="danger" data-color="red">
+                    <!--
+            Consejo 1: puede cambiar el color de la barra lateral utilizando: data-color = "blue | green | orange | red | yellow"
+                    -->
+                    <div class="logo">
+                        <a class="simple-text logo-mini" href="">
+                            <div class="logo-image-small">
+
+                                <img src="../../assets/img/Nutricionista.png" alt=""/>
+                            </div>
+                        </a>
+                        <a class="simple-text logo-normal">
+                            Pedagoga
+                            <!-- <div class="logo-image-big">
+                <img src="../assets/img/logo-big.png">
+              </div> -->
+                        </a>
+                    </div>
+
+
+
+                    <div class="sidebar-wrapper">
+                        <ul class="nav">
+
+                            <li>
+                                <li class="">
+
+                                    <a href="MyPerfil.xhtml">
+                                        <i class="icon-user-check" data-active-color="danger" data-color="blue">
+                                        </i>
+                                        <p>
+                                            Mi Perfil
+                                        </p>
+                                    </a>
+                                </li>
+                               
+                                <li>
+                                     <li class=" ">
+                                           <a href="Planilla.xhtml">
+                                            <i class="icon-clipboard fa-fw">
+                                            </i>
+                                            <p>
+                                                Planilla
+                                            </p>
+                                        </a>
+                                    </li>
+                                                                       
+                                       <li class="">
+                                            <a href="Actividades.xhtml">
+                                                <i class="icon-file-picture">
+                                                </i>
+                                                <p>
+                                                    Actividades
+                                                </p>
+                                            </a>
+                                        </li>
+                                    <li class="">
+
+                                        <a href="ObservacionesGenerales.xhtml">
+                                            <i class="icon-file-text2">
+                                            </i>
+                                            <p>
+                                                Observacion General
+                                            </p>
+                                        </a>
+                                    </li>
+
+                                        
+                                    
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </ui:define>
+       
+
+           
+
+            <ui:define name="content">
+                 <img src="../../assets/img/pedagogacontenido.jpg" style=" margin-top:-0px; width: 100%;   margin-left: -30px;" alt="" />
+            </ui:define>
+
+          
+
+        </ui:composition>
+
+    </body>
+</html>

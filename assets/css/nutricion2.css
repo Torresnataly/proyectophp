@@ -1,0 +1,81 @@
+*  {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{ 
+    background-image: url('.img/consulta.jpg');  
+    width: 100%;
+}
+/*contenedor de la tabla*/
+#customers {
+    font-family: "Time Roman", Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+}
+/*ajustes de la tabla*/
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+/*colores de las filas intermedias*/
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+/*color donde valla en maus*/
+#customers tr:hover {background-color: #82E0D2  ;}
+/*primera fila*/
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color:#13B1E3  ;
+    color: white;
+}
+.btn-primary{
+    text-align: center;
+    background: #4CAF50 ;
+    width: 40%;
+    height: 40px;
+    margin-left: 90px;
+    border-radius:50px;
+    color:white;
+}
+.contenedor-modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.contenedor-modal button {
+    position: relative;
+    top: 40%;
+}
+.brand_logo_container img {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    top: -170px;
+    border-radius: 50%;
+    background: #60a3bc;
+    padding: 10px;
+    text-align: center;
+    margin-right: 480px;
+    
+    
+}
+.brand_logo img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+/*formulario*/
+.table-user-information{
+    top:-380px;
+}
+
+
+
+

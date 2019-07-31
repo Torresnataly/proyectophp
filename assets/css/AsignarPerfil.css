@@ -1,0 +1,72 @@
+/*-----Background-----*/
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body{
+   
+    font-family: Time Roman;
+}
+
+/*contenedor del from*/
+.form-block {
+  width: 100%;
+  background:transparent;
+  border-radius: 1px;
+  color: gray;
+  display: block;
+  min-height:700px;
+  overflow: hidden;
+  padding:30px;
+  margin-bottom:20px;
+  margin-left: 170px;
+ 
+ 
+}
+/*titulo registrar usuarios*/
+.form-block h2 {
+  border-bottom: 1px solid #88c724;
+  color: #88c724;
+  display: block;
+  font-size: 24px;
+  font-weight: 800px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  text-align: center
+}
+/*cudros pequeños*/
+.form .form-control {
+  border-radius: 5px;
+  color: #999;
+  width: 60%;
+  height: 45px;
+  margin-left: 230px;
+  margin-top:20px;
+}
+.form-control:focus {
+  border-color: #88c724;
+  box-shadow: none;
+}
+/*button*/
+.custom-btn:hover,
+.custom-btn {
+  background-color: #88c724;
+  border-color: #88c724;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  width: 80%;
+  margin-top: 30px;
+  margin-left: 80px;
+
+}
+@media only screen and (max-width:800px) {
+  /* para telefonos moviles: */
+  .custom-btn , .form-block,p,.form .form-control{
+    width:100%;
+    margin-left: 25px;
+  }
+ 
+}

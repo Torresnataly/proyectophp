@@ -1,0 +1,42 @@
+*  {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{ 
+    background-image: url('.img/consulta.jpg');  
+    
+}
+
+
+.contenedor-modal button {
+    position: relative;
+    top: 40%;
+}
+.brand_logo_container img {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    top: -150px;
+    border-radius: 50%;
+    background: #60a3bc;
+    padding: 10px;
+    text-align: center;
+    margin-right: 480px;
+    
+    
+}
+.brand_logo img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+/*formulario*/
+.table-user-information{
+    top:-380px;
+}
+
+
+
+

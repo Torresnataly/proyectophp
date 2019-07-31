@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+
+    font-family: Time Roman;
+} 
+
+
+
+.card-content {
+
+   margin-right: -90px;
+    margin-left: 40px;
+    margin-top: 80px;
+    background: #ffffff;
+   border: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+
+}
+
+.card-img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0;
+    z-index: 1;
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+
+}
+
+.card-img span {
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    background: #1ABC9C;
+    padding: 6px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transform: translate(-50%,-50%);
+}
+.card-img span h4{
+    font-size: 12px;
+    margin:0;
+    padding:10px 5px;
+    line-height: 0;
+}
+.card-desc {
+    padding: 1.25rem;
+}
+
+.card-desc h3 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.card-desc p {
+    color: #747373;
+    font-size: 14px;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.btn-card{
+    background-color: #1ABC9C;
+    color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    padding: .84rem 2.14rem;
+    font-size: .81rem;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    margin: 0;
+    border: 0;
+    -webkit-border-radius: .125rem;
+    border-radius: .125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    color: #fff;
+}
+.btn-card:hover {
+    background: orange;
+}
+a.btn-card {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.food
+{
+    position: relative;
+    height:424px;
+    background: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .5);
+    
+}
+
+.food > .cover
+{
+    position: relative;
+    height: 290px;
+    background: transparent center no-repeat;
+    background-size: 100% auto;
+    border-radius: 2px 2px 0 0;
+    
+}
+
+.food > .cover > label
+{
+    position: absolute;
+    top: 20px;
+   
+    height: 33px;
+   
+    line-height: 33px;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-shadow: 0 1px 2px #000;
+    background: rgba(136, 86, 168, .6);
+}
+
+.food > .cover > label > i
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.food > .cover > label > i > svg
+{
+    margin: 8px;
+}
+
+.food > .cover > .download
+{
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 47px;
+    height: 47px;
+    background: rgba(51, 193, 210, .6);
+    border-radius: 100%;
+}
+.modal-image .modal-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.modal-image .modal-body .modal-img{
+    margin: 0 -15px;
+}
+.modal-image .modal-body .list-group {
+    margin: 0px -15px;
+}
+.modal-image .modal-body .list-group .list-group-item {
+    background-color: transparent;
+}
+.modal-image .modal-body .list-group .list-group-item:first-child {
+    border-radius:0;
+}
+.modal-image .modal-body .list-group .list-group-item:last-child {
+    border: 0 none;
+    border-radius: 0;
+}
+
+.food > .cover > .download:hover { background: #33C1D2 }
+
+.card-content:hover{ transform:  translate(10px, 10px);
+                     background}
+
+.food > .cover > .download > svg
+{
+    margin: 12px 10px 0;
+}
+
+.food > .info
+{
+    position: relative;
+    height: 134px;
+    overflow: hidden;
+    border-radius: 0 0 2px 2px;
+}
+
+.food > .info > .recipe
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 134px;
+    height: 134px;
+    background: #8856A8;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0 0 0 2px;
+}
+
+.food > .info > .recipe:hover { background: green; }
+
+.food > .info > .recipe > i
+{
+    display: block;
+    margin: 38px 0 15px;
+}
+
+.food > .info > .content
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 154px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #888;
+}
+
+.food > .info > .content strong { font-weight: normal; color: #333 }
+.food > .info > .content .pad-right { padding-right: 20px }
+.food > .info > .content .border-right { border-right: 1px solid #D9D9D9 }
+.food > .info > .content .consumers img, .food > .info > .content .consumers span { display: inline-block; width: 32px; height: 32px; margin: 0 2px 0 0; line-height: 32px; vertical-align: middle; border-radius: 100% }
+.food > .info > .content .consumers span { margin: 0 }
+
+.food > .info > .content h1
+{
+    margin: 0 0 10px;
+    font-size: 26px;
+    font-weight: normal;
+    color: #333;
+}
+
+.food > .info > .content .stars, .food > .info > .content .stars > em
+{
+    display: block;
+    width: 99px;
+    height: 18px;
+    margin: 0 auto 7px;
+    text-align: left;
+    background: url(http://c.boylett.uk/generic/image_png_00004.png);
+}
+
+.food > .info > .content .stars > em
+{
+    width: 99px;
+    height: 18px;
+    margin: 0;
+    background: url(http://c.boylett.uk/generic/image_png_00004.png);
+    background-position: 0 -18px;
+}
+/* End card section */

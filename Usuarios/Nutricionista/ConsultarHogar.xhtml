@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+    <body>
+
+        <ui:composition template="./../../Tema/principal.xhtml">
+
+            <ui:define name="left">
+                <div class="sidebar" data-active-color="danger" data-color="red">
+                    <!--
+            Consejo 1: puede cambiar el color de la barra lateral utilizando: data-color = "blue | green | orange | red | yellow"
+                    -->
+                    <div class="logo">
+                        <a class="simple-text logo-mini" href="">
+                            <div class="logo-image-small">
+
+                                <img src="../../assets/img/Nutricionista.png" alt=""/>
+                            </div>
+                        </a>
+                        <a class="simple-text logo-normal">
+                            Nutricionista
+                            <!-- <div class="logo-image-big">
+                <img src="../assets/img/logo-big.png">
+              </div> -->
+                        </a>
+                    </div>
+
+
+
+                    <div class="sidebar-wrapper">
+                        <ul class="nav">
+
+                            <li>
+                                <li class="">
+
+                                    <a href="MyPerfil.xhtml">
+                                        <i class="icon-user-check" data-active-color="danger" data-color="blue">
+                                        </i>
+                                        <p>
+                                            Mi Perfil
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="ConsultarHogar.xhtml">
+                                    <i class="icon-home fa-fw" data-active-color="danger" data-color="blue">
+                                    </i>
+                                    <p>
+                                        Colsultar Hogar
+                                    </p>
+                                    </a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+
+            </ui:define>
+
+
+
+            <ui:define name="content">
+
+                <div class="card-body row no-gutters align-items-center">
+
+                    <!--end of col-->
+                    <div class="col">
+                        <input class="form-control" type="Buscar" placeholder="Ingrese Nombre o Numero "/>
+                    </div>
+                    <!--end of col-->
+                    <div class="col-5">
+                        <button class="btn btn-lg btn-success" style="padding: 10px; margin-left: 20px;" type="submit">Buscar</button>
+                    </div>
+                    <!--end of col-->
+                </div>
+
+                <div class="row">
+                    <table class="table table-primary text-center  ">
+                        <thead>
+                            <tr>
+                                <th scope="col">Hogares Asignados</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <c:forEach items="#{control.calcular(libra)}" var="obj">
+                            </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
+
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th scope="col">Numero del Hogar</th>
+                            <th scope="col">Nombre del Hogar</th>
+                            <th scope="col">Direccion</th>
+                            <th scope="col">Telefono</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <c:forEach items="#{lavanderiaControlador.listas}" var="obje">
+                            <tr>
+                                <th scope="row">#{obje.peso}</th>
+                                <td>#{obje.nivelTotal()}</td>
+                                <td>#{obje.pesoTotal()}</td>
+                            </tr>
+
+
+                        </c:forEach>
+                    </tbody>
+                </table>
+
+
+
+                <script type="text/javascript">
+                    function estadoOk(a) {
+                        Swal.fire(
+                                'Registro OK !',
+                                a,
+                                'success'
+                                );
+
+                    }
+                    function estadoBad(a) {
+                        Swal.fire(
+                                'Verifique sus datos, intente nuevamente  !',
+                                a,
+                                'error'
+                                );
+
+                    }
+                </script>
+
+
+            </ui:define>
+
+
+
+        </ui:composition>
+
+    </body>
+</html>

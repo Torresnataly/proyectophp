@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:html5="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
+
+
+    <body>
+
+        <ui:composition template="./../Tema/principal.xhtml">
+
+            <ui:define name="left">
+
+
+
+                <div class="sidebar" data-active-color="danger" data-color="red">
+                    <!--
+            Consejo 1: puede cambiar el color de la barra lateral utilizando: data-color = "blue | green | orange | red | yellow"
+                    -->
+                    <div class="logo">
+                        <a class="simple-text logo-mini" href="">
+                            <div class="logo-image-small">
+                                <img src="../assets/img/perfilf.png">
+                                </img>
+                            </div>
+                        </a>
+                        <a class="simple-text logo-normal">
+                            Director Zonal
+                            <!-- <div class="logo-image-big">
+                <img src="../assets/img/logo-big.png">
+              </div> -->
+                        </a>
+                    </div>
+
+
+
+                    <div class="sidebar-wrapper">
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="../Administrador/indexConsultar.xhtml">
+
+                                    <i class="icon-search fa-fw">
+                                    </i>
+                                    <p>
+                                        Hogares Infantiles
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <li class="">
+                                    <a href="../Administrador/indexAsignar.xhtml">
+                                        <i class="icon-profile fa-fw" data-active-color="danger" data-color="blue">
+                                        </i>
+                                        <p>
+                                            Asignar Perfil
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <li class="">
+                                        <a href="../Administrador/indexNutricion.xhtml">
+                                            <i class="fa fa-hourglass-end">
+                                            </i>
+                                            <p>
+                                                Nutricion
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <li class="">
+                                            <a href="../Administrador/indexPlanilla.xhtml">
+                                                <i class="icon-clipboard fa-fw" data-active-color="danger" data-color="blue">
+                                                </i>
+                                                <p>
+                                                    Planilla
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="../Administrador/indexMinuta.xhtml">
+                                                <i class="nc-icon nc-bell-55">
+                                                </i>
+                                                <p>
+                                                    Minuta
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <li class=" ">
+                                                <a href="../Administrador/indexActividades.xhtml">
+                                                    <i class="icon-file-picture">
+                                                    </i>
+                                                    <p>
+                                                        Actividades
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="../Administrador/indexConsultarUsu.xhtml">
+                                                    <i class="icon-users">
+                                                    </i>
+                                                    <p>
+                                                        Usuarios Registrados
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class=" ">
+
+                                                <a href="../Administrador/indexReporteGeneral.xhtml">
+                                                    <i class="icon-file-text2">
+                                                    </i>
+                                                    <p>
+                                                        Observacion General
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </li>
+                                    </li>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </ui:define>
+
+
+
+            <ui:define name="content">
+
+
+                <div class="col-md-10" style="margin-left: 100px;" >
+
+
+                    <div class="card-body" style="margin-top: 150px;">
+                        <h:form>
+                            <div class="row">
+                                <div class="col-md-5 pr-1">
+                                    <div class="form-group">
+                                        <label>
+                                            Numero del Hogar
+                                        </label>
+                                        <h:inputText  class="form-control" html5:placeholder="Ingrese Numero Hogar"   value="#{registroSesion.idHogar}"></h:inputText>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3 px-1">
+                                    <div class="form-group">
+                                        <label>
+                                            Nombre del Hogar
+                                        </label>
+                                        <h:inputText  class="form-control" html5:placeholder="Ingrese Nombre Hogar"  required="" value="#{registroSesion.nombreHogar}"></h:inputText>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pl-1">
+                                    <div class="form-group">
+                                        <label>
+                                            Cantidad de niños
+                                        </label>
+                                        <h:inputText  class="form-control" html5:placeholder="Ingrese Cantidad"  required=""  value="#{registroSesion.cantidadNino}"></h:inputText>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 pr-1">
+                                    <div class="form-group">
+                                        <label>
+                                            Direccion
+                                        </label>
+                                        <h:inputText  class="form-control" html5:placeholder="Ingrese Direccion"  required="" value="#{registroSesion.direccion}"></h:inputText>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pl-1">
+                                    <div class="form-group">
+                                        <label>
+                                            Telefono o Celular
+                                        </label>
+                                        <h:inputText  class="form-control" html5:placeholder="Telefono o Celular" required=""  value="#{registroSesion.telefono}"></h:inputText>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label  value="#{registroSesion.localidad}" for="tdl">Localidad</label>
+                                        <h:selectOneMenu  id="Localidad" styleClass="form-control" value="#{registroSesion.localidad}" >
+                                            <f:selectItem itemValue="0" itemLabel="Seleccione ...."></f:selectItem>
+                                            <f:selectItem itemValue="Teusaquillo" itemLabel="Teusaquillo"></f:selectItem>
+                                            <f:selectItem itemValue="Usme" itemLabel="Usme"></f:selectItem>
+                                            <f:selectItem itemValue="Bosa" itemLabel="Bosa"></f:selectItem>
+                                            <f:selectItem itemValue="Chapinero" itemLabel="Chapinero"></f:selectItem>
+                                            <f:selectItem itemValue="San Cristobal" itemLabel="San Cristobal"></f:selectItem>
+                                            <f:selectItem itemValue="Suba" itemLabel="Suba"></f:selectItem>
+                                            <f:selectItem itemValue="Usaquen" itemLabel="Usaquen"></f:selectItem>
+                                            <f:selectItem itemValue="Santafe" itemLabel="Santafe"></f:selectItem>
+                                            <f:selectItem itemValue="Tunjuelito" itemLabel="Tunjuelito"></f:selectItem>
+                                            <f:selectItem itemValue="Kennedy" itemLabel="Kennedy"></f:selectItem>
+                                        </h:selectOneMenu>  
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pl-1">
+                                    <div class="form-group">
+                                        <label>
+                                            Barrio
+                                        </label>
+                                        <h:inputText  class="form-control" html5:placeholder="Ingrese Barrio" value="#{registroSesion.barrio}"></h:inputText>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <h:commandButton class="btn btn-primary " action="#{registroSesion.ingresarHogar()}"  style="margin: auto; margin-top: 20px;"  onclick="alert('registro Existo')" value="Registrar"></h:commandButton>
+
+
+
+                            </div>
+                        </h:form>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <table class="table table-primary text-center  ">
+                        <thead>
+                            <tr>
+                                <th scope="col">Hogares Ingresados</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <c:forEach items="#{control.calcular(libra)}" var="obj">
+                            </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
+
+                <table class="table table-primary text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">Numero del Hogar</th>
+                            <th scope="col">Nombre del Hogar</th>
+                            <th scope="col">Consultar</th>
+                            <th scope="col">Asignar</th>
+                            <th scope="col">Eliminar Hogar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <h:form>
+                            <c:forEach items="#{registroSesion.leerregistro()}" var="obje">
+                                <tr>
+                                    <th>#{obje.idHogares}</th>
+                                    <td>#{obje.nombreHogar}</td>
+                                    <td><h:commandButton   value="Consultar" class="btn icon-home btn-primary" style="width: 120px;" ></h:commandButton></td>
+                                    <td><h:commandButton  value="Asignar" class="btn icon-search btn-primary" style="width: 120px;"></h:commandButton></td>
+                                    <td><h:commandButton value="Eliminar" class="btn icon-bin btn-primary"  style="width: 120px;"></h:commandButton></td>
+                                </tr>
+
+
+                            </c:forEach>
+                        </h:form>
+                    </tbody>
+                </table>
+
+
+
+                <script type="text/javascript">
+                    function estadoOk(a) {
+                        Swal.fire(
+                                'Registro OK !',
+                                a,
+                                'success'
+                                );
+
+                    }
+                    function estadoBad(a) {
+                        Swal.fire(
+                                'Verifique sus datos, intente nuevamente  !',
+                                a,
+                                'error'
+                                );
+
+                    }
+                </script>        
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>

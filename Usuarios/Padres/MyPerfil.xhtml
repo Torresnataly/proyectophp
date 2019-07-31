@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+
+        <ui:composition template="./../../Tema/principal.xhtml">
+
+
+            <ui:define name="left">
+                <div class="sidebar" data-active-color="danger" data-color="red">
+                    <!--
+            Consejo 1: puede cambiar el color de la barra lateral utilizando: data-color = "blue | green | orange | red | yellow"
+                    -->
+                    <div class="logo">
+                        <a class="simple-text logo-mini" >
+                            <div class="logo-image-small">
+
+
+                                <img src="../../assets/img/niñas.png" alt=""/>
+                            </div>
+                        </a>
+                        <a class="simple-text logo-normal">
+                            Maria Camila 
+                            <!-- <div class="logo-image-big">
+                <img src="../assets/img/logo-big.png">
+              </div> -->
+                        </a>
+                    </div>
+
+
+
+                    <div class="sidebar-wrapper">
+                        <ul class="nav">
+
+                            <li>
+                                <li class="active">
+
+                                    <a href="MyPerfil.xhtml">
+                                        <i class="icon-user-check" data-active-color="danger" data-color="blue">
+                                        </i>
+                                        <p>
+                                            Mi Perfil
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    
+                                    <a href="Actividades.xhtml">
+                                        <i class="icon-home fa-fw" data-active-color="danger" data-color="blue">
+                                        </i>
+                                        <p>
+                                            Actividades
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class=" ">
+                                    <a href="Nutricion.xhtml">
+                                        <i class="fa fa-hourglass-end">
+                                        </i>
+                                        <p>
+                                            Nutricion
+                                        </p>
+                                    </a>
+                                </li>
+
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+
+            </ui:define>
+
+            <ui:define name="content">
+
+                <link href="../../assets/css/AsignarPerfil.css" rel="stylesheet" type="text/css"/>
+
+                <div class="row">
+
+                    <div class="col text-center mt-2">
+                        <img alt="picture"  class="img-lg rounded-circle border shadow" src="../../assets/img/niñas.png" style="width: 15%; margin-left: -30px;" />
+                        <h3> Maria Camila Gonzales Ruiz</h3>
+
+                    </div>
+                </div>
+                <div class="content" style="margin-left: 120px;">
+
+                    <div class="col-md-10">
+
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                Datos Del Niñ@
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-5 pr-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Nombres
+                                            </label>
+                                            <input class="form-control"   required="" placeholder="Nombres" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-7 pl-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Apellidos
+                                            </label>
+                                            <input class="form-control" placeholder="Apellidos" required="" type="text">
+                                            </input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 pr-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Documento
+                                            </label>
+                                            <input class="form-control" placeholder="Documento" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 pl-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Edad
+                                            </label>
+                                            <input class="form-control" placeholder="Edad" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>
+                                                Talla
+                                            </label>
+                                            <input class="form-control" placeholder="Talla" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>
+                                                Peso
+                                            </label>
+                                            <input class="form-control" placeholder="Peso" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>
+                                                Genero
+                                            </label>
+                                            <input class="form-control" placeholder="Genero" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>
+                                                RH
+                                            </label>
+                                            <input class="form-control" placeholder="RH" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>
+                                                Eps
+                                            </label>
+                                            <input class="form-control" placeholder="Eps" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 pr-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Cambiar contraseña
+                                            </label>
+                                            <input class="form-control" id="password" name="password" placeholder="Contraseña" required="" type="password">
+                                            </input>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-10">
+
+                        <div class="card-header">
+                            <h6 class="card-title">
+                                Datos De La Madre
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-5 pr-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Nombres
+                                            </label>
+                                            <input class="form-control"   required="" placeholder="Nombres" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-7 pl-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Apellidos
+                                            </label>
+                                            <input class="form-control" placeholder="Apellidos" required="" type="text">
+                                            </input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 pr-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Documento
+                                            </label>
+                                            <input class="form-control" placeholder="Documento" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 pl-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Telefono
+                                            </label>
+                                            <input class="form-control" placeholder="Telefono" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>
+                                                Correo
+                                            </label>
+                                            <input class="form-control" placeholder="Correo" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                     <div class="col-md-10">
+
+                        <div class="card-header">
+                            <h6 class="card-title">
+                                Datos Del Padre
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-5 pr-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Nombres
+                                            </label>
+                                            <input class="form-control"   required="" placeholder="Nombres" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-7 pl-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Apellidos
+                                            </label>
+                                            <input class="form-control" placeholder="Apellidos" required="" type="text">
+                                            </input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 pr-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Documento
+                                            </label>
+                                            <input class="form-control" placeholder="Documento" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 pl-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Telefono
+                                            </label>
+                                            <input class="form-control" placeholder="Telefono" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>
+                                                Correo
+                                            </label>
+                                            <input class="form-control" placeholder="Correo" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                     <div class="col-md-10">
+
+                        <div class="card-header">
+                            <h6 class="card-title">
+                                Datos Del Acudiente
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-5 pr-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Nombres
+                                            </label>
+                                            <input class="form-control"   required="" placeholder="Nombres" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-7 pl-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Apellidos
+                                            </label>
+                                            <input class="form-control" placeholder="Apellidos" required="" type="text">
+                                            </input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 pr-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Documento
+                                            </label>
+                                            <input class="form-control" placeholder="Documento" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 pl-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Telefono
+                                            </label>
+                                            <input class="form-control" placeholder="Telefono" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>
+                                                Correo
+                                            </label>
+                                            <input class="form-control" placeholder="Correo" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="update ml-auto mr-auto">
+                                            <button class="btn btn-success btn-round" style="margin-top: 90px; margin-left: 500px; " type="submit">
+                                                Guardar Datos
+                                            </button>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </ui:define>
+
+
+
+        </ui:composition>
+
+    </body>
+</html>

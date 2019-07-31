@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+
+        <ui:composition template="./../../Tema/principal.xhtml">
+
+            <ui:define name="left">
+                <div class="sidebar" data-active-color="danger" data-color="red">
+                    <!--
+            Consejo 1: puede cambiar el color de la barra lateral utilizando: data-color = "blue | green | orange | red | yellow"
+                    -->
+                    <div class="logo">
+                        <a class="simple-text logo-mini" href="">
+                            <div class="logo-image-small">
+
+                                <img src="../../assets/img/Nutricionista.png" alt=""/>
+                            </div>
+                        </a>
+                        <a class="simple-text logo-normal">
+                            Pedagoga
+                            <!-- <div class="logo-image-big">
+                <img src="../assets/img/logo-big.png">
+              </div> -->
+                        </a>
+                    </div>
+
+
+
+                    <div class="sidebar-wrapper">
+                        <ul class="nav">
+
+                            <li>
+                                <li class="active">
+
+                                    <a href="MyPerfil.xhtml">
+                                        <i class="icon-user-check" data-active-color="danger" data-color="blue">
+                                        </i>
+                                        <p>
+                                            Mi Perfil
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <li class=" ">
+                                        <a href="Planilla.xhtml">
+                                            <i class="icon-clipboard fa-fw">
+                                            </i>
+                                            <p>
+                                                Planilla
+                                            </p>
+                                        </a>
+                                    </li>
+
+                                    <li class="">
+                                        <a href="Actividades.xhtml">
+                                            <i class="icon-file-picture">
+                                            </i>
+                                            <p>
+                                                Actividades
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="">
+
+                                        <a href="ObservacionesGenerales.xhtml">
+                                            <i class="icon-file-text2">
+                                            </i>
+                                            <p>
+                                                Observacion General
+                                            </p>
+                                        </a>
+                                    </li>
+
+
+
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </ui:define>
+
+
+
+            <ui:define name="content">
+                <link href="../../assets/css/AsignarPerfil.css" rel="stylesheet" type="text/css"/>
+
+                <div class="row">
+
+                    <div class="col text-center mt-2">
+                        <img alt="picture"  class="img-lg rounded-circle border shadow" src="../../assets/img/Nutricionista.png" style="width: 15%; margin-left: -30px;" />
+                        <h3> Carmen Cruz </h3>
+
+                    </div>
+                </div>
+                <div class="content" style="margin-left: 120px;">
+
+                    <div class="col-md-10">
+
+                        <div class="card-header">
+                            <h4 class="card-title">
+                                Editar perfil
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-5 pr-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Nombres
+                                            </label>
+                                            <input class="form-control"   required="" placeholder="Nombres" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-7 pl-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Apellidos
+                                            </label>
+                                            <input class="form-control" placeholder="Apellidos" required="" type="text">
+                                            </input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 pr-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Documento
+                                            </label>
+                                            <input class="form-control" placeholder="Documento" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pl-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Telefono
+                                            </label>
+                                            <input class="form-control" placeholder="Telefono" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>
+                                                Dirección
+                                            </label>
+                                            <input class="form-control" placeholder="Direccion" required="" type="text" value="">
+                                            </input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 pr-1">
+                                        <div class="form-group">
+                                            <label>
+                                                Cambiar contraseña
+                                            </label>
+                                            <input class="form-control" id="password" name="password" placeholder="Contraseña" required="" type="password">
+                                            </input>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="update ml-auto mr-auto">
+                                            <button class="btn btn-success btn-round" style="margin-top: 90px; margin-left: 100px; " type="submit">
+                                                Guardar Datos
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </ui:define>
+
+
+
+
+
+
+        </ui:composition>
+
+    </body>
+</html>

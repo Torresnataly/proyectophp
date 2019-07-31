@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <link href="../assets/css/actividades.css" rel="stylesheet" type="text/css"/>
+
+
+    <body>
+
+        <ui:composition template="./../Tema/principal.xhtml">
+
+            <ui:define name="left">
+                <div class="sidebar" data-active-color="danger" data-color="red">
+
+                    <!--
+            Consejo 1: puede cambiar el color de la barra lateral utilizando: data-color = "blue | green | orange | red | yellow"
+                    -->
+                    <div class="logo">
+                        <a class="simple-text logo-mini" href="">
+                            <div class="logo-image-small">
+                                <img src="../assets/img/perfilf.png">
+                                </img>
+                            </div>
+                        </a>
+                        <a class="simple-text logo-normal">
+                            Director Zonal
+                            <!-- <div class="logo-image-big">
+                <img src="../assets/img/logo-big.png">
+              </div> -->
+                        </a>
+                    </div>
+
+
+
+                    <div class="sidebar-wrapper">
+                        <ul class="nav">
+                            <li class="">
+                                <a href="../Administrador/indexConsultar.xhtml">
+                                    <i class="icon-search fa-fw">
+                                    </i>
+                                    <p>
+                                        Hogares Infantiles
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <li class="">
+                                    <a href="../Administrador/indexAsignar.xhtml">
+
+                                        <i class="icon-profile fa-fw" data-active-color="danger" data-color="blue">
+                                        </i>
+                                        <p>
+                                            Asignar Perfil
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <li class="">
+                                        <a href="../Administrador/indexNutricion.xhtml">
+                                            <i class="fa fa-hourglass-end">
+                                            </i>
+                                            <p>
+                                                Nutricion
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <li class="">
+                                            <a href="../Administrador/indexPlanilla.xhtml">
+                                                <i class="icon-clipboard fa-fw" data-active-color="danger" data-color="blue">
+                                                </i>
+                                                <p>
+                                                    Planilla
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="../Administrador/indexMinuta.xhtml">
+                                                <i class="nc-icon nc-bell-55">
+                                                </i>
+                                                <p>
+                                                    Minuta
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <li class="active ">
+
+                                                <a href="../Administrador/indexActividades.xhtml">
+                                                    <i class="icon-file-picture">
+                                                    </i>
+                                                    <p>
+                                                        Actividades
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="../Administrador/indexConsultarUsu.xhtml">
+                                                    <i class="icon-users">
+                                                    </i>
+                                                    <p>
+                                                        Usuarios Registrados
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class=" ">
+
+                                                <a href="../Administrador/indexReporteGeneral.xhtml">
+                                                    <i class="icon-file-text2">
+                                                    </i>
+                                                    <p>
+                                                        Observacion General
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </li>
+                                    </li>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </ui:define>
+
+
+
+            <ui:define name="content">
+                                <!-- Tarjeta Uno -->
+                <section class="details-card">
+
+                    <div class="row">
+                        <div class="container" style="margin-top: 20px;">
+                            <div class="row">
+
+                                <div class="col-md-4">
+                                    <div class="card-content" style="margin-right:-70px;">
+
+                                        <div class="food">
+                                            <div class="cover"> 
+                                                <img src="../assets/img/figura.jpg"   style="margin-left: 0px; margin-top: 15px;" data-toggle="modal" data-target="#myModal"></img>
+                                                <a href="#" class="download">
+                                                    <svg  x="0px" y="0px" width="27px" height="22px"
+                                                          >
+                                                        <g>
+                                                            <path d="M 12.5625 0 C 12.0102 0 11.5625 0.4477 11.5625 1 L 11.565 8.69 L 9.0625 8.6875 L 12 16 L 14 16 L 17.0625 8.6875 L 14.5 8.69 L 14.5 1 C 14.5 0.4477 14.0523 0 13.5 0 L 12.5625 0 ZM 1 19 L 1 14 L 0 14 L 0 19 C 0 20.6569 1.3431 22 3 22 L 24 22 C 25.6569 22 27 20.6569 27 19 L 27 14 L 26 14 L 26 19 C 26 20.1046 25.1046 21 24 21 L 3 21 C 1.8954 21 1 20.1046 1 19 Z" fill="#ffffff"/>
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="info" >
+                                                <a href="#" class="recipe">
+                                                    <i>
+                                                        <svg x="0px" y="0px" width="26px" height="28px"
+                                                             >
+                                                            <g>
+                                                                <path d="M 8.5 20 L 8.5 21 L 17.5 21 L 17.5 20 L 8.5 20 ZM 8.5 16 L 8.5 17 L 17.5 17 L 17.5 16 L 8.5 16 ZM 8.5 12 L 8.5 13 L 17.5 13 L 17.5 12 L 8.5 12 ZM 20 0 C 19.4477 0 19 0.4477 19 1 L 19 6 C 19 6.5523 19.4477 7 20 7 C 20.5523 7 21 6.5523 21 6 L 21 1 C 21 0.4477 20.5523 0 20 0 ZM 13 0 C 12.4477 0 12 0.4477 12 1 L 12 6 C 12 6.5523 12.4477 7 13 7 C 13.5523 7 14 6.5523 14 6 L 14 1 C 14 0.4477 13.5523 0 13 0 ZM 6 0 C 5.4477 0 5 0.4477 5 1 L 5 6 C 5 6.5523 5.4477 7 6 7 C 6.5523 7 7 6.5523 7 6 L 7 1 C 7 0.4477 6.5523 0 6 0 ZM 15 4 L 18 4 L 18 3 L 15 3 L 15 4 ZM 8 4 L 11 4 L 11 3 L 8 3 L 8 4 ZM 3 4 L 4 4 L 4 3 L 3 3 C 1.3431 3 0 4.3431 0 6 L 0 25 C 0 26.6569 1.3431 28 3 28 L 23 28 C 24.6569 28 26 26.6569 26 25 L 26 6 C 26 4.3431 24.6569 3 23 3 L 22 3 L 22 4 L 23 4 C 24.1046 4 25 4.8954 25 6 L 25 25 C 25 26.1046 24.1046 27 23 27 L 3 27 C 1.8954 27 1 26.1046 1 25 L 1 6 C 1 4.8954 1.8954 4 3 4 Z" fill="#ffffff"/>
+                                                            </g>
+                                                        </svg>
+                                                    </i>
+                                                    <input class="form-control"  placeholder=" " type="text" value="" style="margin-left: 3px; width: 95%; text-align: center;"/>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="form-group">
+                                                        Descripcion del director 
+                                                        <div class="col-sm-12">
+                                                            <textarea class="form-control" rows="8" id="comment" ></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!-- Tarjeta dos -->
+                                <div class="col-md-4">
+                                    <div class="card-content" style="margin-left: 70px;">
+
+                                        <div class="food">
+                                            <div class="cover"> 
+                                                <img src="../assets/img/Pintura.jpg"   style="margin-left: 0px; margin-top: 15px;" data-toggle="modal" data-target="#myModal2"></img>
+                                                <a href="#" class="download">
+                                                    <svg  x="0px" y="0px" width="27px" height="22px"
+                                                          >
+                                                        <g>
+                                                            <path d="M 12.5625 0 C 12.0102 0 11.5625 0.4477 11.5625 1 L 11.565 8.69 L 9.0625 8.6875 L 12 16 L 14 16 L 17.0625 8.6875 L 14.5 8.69 L 14.5 1 C 14.5 0.4477 14.0523 0 13.5 0 L 12.5625 0 ZM 1 19 L 1 14 L 0 14 L 0 19 C 0 20.6569 1.3431 22 3 22 L 24 22 C 25.6569 22 27 20.6569 27 19 L 27 14 L 26 14 L 26 19 C 26 20.1046 25.1046 21 24 21 L 3 21 C 1.8954 21 1 20.1046 1 19 Z" fill="#ffffff"/>
+                                                        </g>
+
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="info" >
+                                                <a href="#" class="recipe">
+                                                    <i>
+                                                        <svg x="0px" y="0px" width="26px" height="28px"
+                                                             >
+                                                            <g>
+                                                                <path d="M 8.5 20 L 8.5 21 L 17.5 21 L 17.5 20 L 8.5 20 ZM 8.5 16 L 8.5 17 L 17.5 17 L 17.5 16 L 8.5 16 ZM 8.5 12 L 8.5 13 L 17.5 13 L 17.5 12 L 8.5 12 ZM 20 0 C 19.4477 0 19 0.4477 19 1 L 19 6 C 19 6.5523 19.4477 7 20 7 C 20.5523 7 21 6.5523 21 6 L 21 1 C 21 0.4477 20.5523 0 20 0 ZM 13 0 C 12.4477 0 12 0.4477 12 1 L 12 6 C 12 6.5523 12.4477 7 13 7 C 13.5523 7 14 6.5523 14 6 L 14 1 C 14 0.4477 13.5523 0 13 0 ZM 6 0 C 5.4477 0 5 0.4477 5 1 L 5 6 C 5 6.5523 5.4477 7 6 7 C 6.5523 7 7 6.5523 7 6 L 7 1 C 7 0.4477 6.5523 0 6 0 ZM 15 4 L 18 4 L 18 3 L 15 3 L 15 4 ZM 8 4 L 11 4 L 11 3 L 8 3 L 8 4 ZM 3 4 L 4 4 L 4 3 L 3 3 C 1.3431 3 0 4.3431 0 6 L 0 25 C 0 26.6569 1.3431 28 3 28 L 23 28 C 24.6569 28 26 26.6569 26 25 L 26 6 C 26 4.3431 24.6569 3 23 3 L 22 3 L 22 4 L 23 4 C 24.1046 4 25 4.8954 25 6 L 25 25 C 25 26.1046 24.1046 27 23 27 L 3 27 C 1.8954 27 1 26.1046 1 25 L 1 6 C 1 4.8954 1.8954 4 3 4 Z" fill="#ffffff"/>
+                                                            </g>
+                                                        </svg>
+                                                    </i>
+                                                    <input class="form-control"  placeholder=" " type="text" value="" style="margin-left: 3px; width: 95%; text-align: center;"/>
+                                                </a>
+                                                <div class="content">
+                                                    <div class="form-group">
+                                                        Descripcion del director 
+                                                        <div class="col-sm-12">
+                                                            <textarea class="form-control" rows="8" id="comment" ></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Tarjeta tres -->
+                        <div class="col-md-4">
+                            <div class="card-content" style="margin-right:-70px;">
+
+                                <div class="food">
+                                    <div class="cover"> 
+                                        <img src="../assets/img/Puntillismo.jpg"   style="margin-left: 0px; margin-top: 15px;" data-toggle="modal" data-target="#myModal3"></img>
+                                        <a href="#" class="download">
+                                            <svg  x="0px" y="0px" width="27px" height="22px"
+                                                  >
+                                                <g>
+                                                    <path d="M 12.5625 0 C 12.0102 0 11.5625 0.4477 11.5625 1 L 11.565 8.69 L 9.0625 8.6875 L 12 16 L 14 16 L 17.0625 8.6875 L 14.5 8.69 L 14.5 1 C 14.5 0.4477 14.0523 0 13.5 0 L 12.5625 0 ZM 1 19 L 1 14 L 0 14 L 0 19 C 0 20.6569 1.3431 22 3 22 L 24 22 C 25.6569 22 27 20.6569 27 19 L 27 14 L 26 14 L 26 19 C 26 20.1046 25.1046 21 24 21 L 3 21 C 1.8954 21 1 20.1046 1 19 Z" fill="#ffffff"/>
+                                                </g>
+
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="info" >
+                                        <a href="#" class="recipe">
+                                            <i>
+                                                <svg x="0px" y="0px" width="26px" height="28px"
+                                                     >
+                                                    <g>
+                                                        <path d="M 8.5 20 L 8.5 21 L 17.5 21 L 17.5 20 L 8.5 20 ZM 8.5 16 L 8.5 17 L 17.5 17 L 17.5 16 L 8.5 16 ZM 8.5 12 L 8.5 13 L 17.5 13 L 17.5 12 L 8.5 12 ZM 20 0 C 19.4477 0 19 0.4477 19 1 L 19 6 C 19 6.5523 19.4477 7 20 7 C 20.5523 7 21 6.5523 21 6 L 21 1 C 21 0.4477 20.5523 0 20 0 ZM 13 0 C 12.4477 0 12 0.4477 12 1 L 12 6 C 12 6.5523 12.4477 7 13 7 C 13.5523 7 14 6.5523 14 6 L 14 1 C 14 0.4477 13.5523 0 13 0 ZM 6 0 C 5.4477 0 5 0.4477 5 1 L 5 6 C 5 6.5523 5.4477 7 6 7 C 6.5523 7 7 6.5523 7 6 L 7 1 C 7 0.4477 6.5523 0 6 0 ZM 15 4 L 18 4 L 18 3 L 15 3 L 15 4 ZM 8 4 L 11 4 L 11 3 L 8 3 L 8 4 ZM 3 4 L 4 4 L 4 3 L 3 3 C 1.3431 3 0 4.3431 0 6 L 0 25 C 0 26.6569 1.3431 28 3 28 L 23 28 C 24.6569 28 26 26.6569 26 25 L 26 6 C 26 4.3431 24.6569 3 23 3 L 22 3 L 22 4 L 23 4 C 24.1046 4 25 4.8954 25 6 L 25 25 C 25 26.1046 24.1046 27 23 27 L 3 27 C 1.8954 27 1 26.1046 1 25 L 1 6 C 1 4.8954 1.8954 4 3 4 Z" fill="#ffffff"/>
+                                                    </g>
+                                                </svg>
+                                            </i>
+                                            <input class="form-control"  placeholder=" " type="text" value="" style="margin-left: 3px; width: 95%; text-align: center;"/>
+                                        </a>
+                                        <div class="content">
+                                            <div class="form-group">
+                                                Descripcion del director 
+                                                <div class="col-sm-12">
+                                                    <textarea class="form-control" rows="8" id="comment" ></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <!-- Tarjeta cuatro -->
+                        <div class="col-md-4">
+                            <div class="card-content" style="margin-left: 70px;">
+
+                                <div class="food">
+                                    <div class="cover"> 
+                                        <img src="../assets/img/Triangulo.jpg"   style="margin-left: 0px; margin-top: 15px;" data-toggle="modal" data-target="#myModal4"></img>
+                                        <a href="#" class="download">
+                                            <svg  x="0px" y="0px" width="27px" height="22px"
+                                                  >
+                                                <g>
+                                                    <path d="M 12.5625 0 C 12.0102 0 11.5625 0.4477 11.5625 1 L 11.565 8.69 L 9.0625 8.6875 L 12 16 L 14 16 L 17.0625 8.6875 L 14.5 8.69 L 14.5 1 C 14.5 0.4477 14.0523 0 13.5 0 L 12.5625 0 ZM 1 19 L 1 14 L 0 14 L 0 19 C 0 20.6569 1.3431 22 3 22 L 24 22 C 25.6569 22 27 20.6569 27 19 L 27 14 L 26 14 L 26 19 C 26 20.1046 25.1046 21 24 21 L 3 21 C 1.8954 21 1 20.1046 1 19 Z" fill="#ffffff"/>
+                                                </g>
+
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="info" >
+                                        <a href="#" class="recipe">
+                                            <i>
+                                                <svg x="0px" y="0px" width="26px" height="28px"
+                                                     >
+                                                    <g>
+                                                        <path d="M 8.5 20 L 8.5 21 L 17.5 21 L 17.5 20 L 8.5 20 ZM 8.5 16 L 8.5 17 L 17.5 17 L 17.5 16 L 8.5 16 ZM 8.5 12 L 8.5 13 L 17.5 13 L 17.5 12 L 8.5 12 ZM 20 0 C 19.4477 0 19 0.4477 19 1 L 19 6 C 19 6.5523 19.4477 7 20 7 C 20.5523 7 21 6.5523 21 6 L 21 1 C 21 0.4477 20.5523 0 20 0 ZM 13 0 C 12.4477 0 12 0.4477 12 1 L 12 6 C 12 6.5523 12.4477 7 13 7 C 13.5523 7 14 6.5523 14 6 L 14 1 C 14 0.4477 13.5523 0 13 0 ZM 6 0 C 5.4477 0 5 0.4477 5 1 L 5 6 C 5 6.5523 5.4477 7 6 7 C 6.5523 7 7 6.5523 7 6 L 7 1 C 7 0.4477 6.5523 0 6 0 ZM 15 4 L 18 4 L 18 3 L 15 3 L 15 4 ZM 8 4 L 11 4 L 11 3 L 8 3 L 8 4 ZM 3 4 L 4 4 L 4 3 L 3 3 C 1.3431 3 0 4.3431 0 6 L 0 25 C 0 26.6569 1.3431 28 3 28 L 23 28 C 24.6569 28 26 26.6569 26 25 L 26 6 C 26 4.3431 24.6569 3 23 3 L 22 3 L 22 4 L 23 4 C 24.1046 4 25 4.8954 25 6 L 25 25 C 25 26.1046 24.1046 27 23 27 L 3 27 C 1.8954 27 1 26.1046 1 25 L 1 6 C 1 4.8954 1.8954 4 3 4 Z" fill="#ffffff"/>
+                                                    </g>
+                                                </svg>
+                                            </i>
+                                            <input class="form-control"  placeholder=" " type="text" value="" style="margin-left: 3px; width: 95%; text-align: center;"/>
+                                        </a>
+                                        <div class="content">
+                                            <div class="form-group">
+                                                Descripcion del director 
+                                                <div class="col-sm-12">
+                                                    <textarea class="form-control" rows="8" id="comment" ></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tarjeta quinta -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-content" style="margin-right:-70px;">
+
+                            <div class="food">
+                                <div class="cover"> 
+                                    <img src="../assets/img/Unir.jpg"   style="margin-left: 0px; margin-top: 15px;" data-toggle="modal" data-target="#myModal5"></img>
+                                    <a href="#" class="download">
+                                        <svg  x="0px" y="0px" width="27px" height="22px"
+                                              >
+                                            <g>
+                                                <path d="M 12.5625 0 C 12.0102 0 11.5625 0.4477 11.5625 1 L 11.565 8.69 L 9.0625 8.6875 L 12 16 L 14 16 L 17.0625 8.6875 L 14.5 8.69 L 14.5 1 C 14.5 0.4477 14.0523 0 13.5 0 L 12.5625 0 ZM 1 19 L 1 14 L 0 14 L 0 19 C 0 20.6569 1.3431 22 3 22 L 24 22 C 25.6569 22 27 20.6569 27 19 L 27 14 L 26 14 L 26 19 C 26 20.1046 25.1046 21 24 21 L 3 21 C 1.8954 21 1 20.1046 1 19 Z" fill="#ffffff"/>
+                                            </g>
+
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="info" >
+                                    <a href="#" class="recipe">
+                                        <i>
+                                            <svg x="0px" y="0px" width="26px" height="28px"
+                                                 >
+                                                <g>
+                                                    <path d="M 8.5 20 L 8.5 21 L 17.5 21 L 17.5 20 L 8.5 20 ZM 8.5 16 L 8.5 17 L 17.5 17 L 17.5 16 L 8.5 16 ZM 8.5 12 L 8.5 13 L 17.5 13 L 17.5 12 L 8.5 12 ZM 20 0 C 19.4477 0 19 0.4477 19 1 L 19 6 C 19 6.5523 19.4477 7 20 7 C 20.5523 7 21 6.5523 21 6 L 21 1 C 21 0.4477 20.5523 0 20 0 ZM 13 0 C 12.4477 0 12 0.4477 12 1 L 12 6 C 12 6.5523 12.4477 7 13 7 C 13.5523 7 14 6.5523 14 6 L 14 1 C 14 0.4477 13.5523 0 13 0 ZM 6 0 C 5.4477 0 5 0.4477 5 1 L 5 6 C 5 6.5523 5.4477 7 6 7 C 6.5523 7 7 6.5523 7 6 L 7 1 C 7 0.4477 6.5523 0 6 0 ZM 15 4 L 18 4 L 18 3 L 15 3 L 15 4 ZM 8 4 L 11 4 L 11 3 L 8 3 L 8 4 ZM 3 4 L 4 4 L 4 3 L 3 3 C 1.3431 3 0 4.3431 0 6 L 0 25 C 0 26.6569 1.3431 28 3 28 L 23 28 C 24.6569 28 26 26.6569 26 25 L 26 6 C 26 4.3431 24.6569 3 23 3 L 22 3 L 22 4 L 23 4 C 24.1046 4 25 4.8954 25 6 L 25 25 C 25 26.1046 24.1046 27 23 27 L 3 27 C 1.8954 27 1 26.1046 1 25 L 1 6 C 1 4.8954 1.8954 4 3 4 Z" fill="#ffffff"/>
+                                                </g>
+                                            </svg>
+                                        </i>
+                                        <input class="form-control"  placeholder=" " type="text" value="" style="margin-left: 3px; width: 95%; text-align: center;"/>
+                                    </a>
+                                    <div class="content">
+                                        <div class="form-group">
+                                            Descripcion del director 
+                                            <div class="col-sm-12">
+                                                <textarea class="form-control" rows="8" id="comment" ></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+                <!-- Modal UNO -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content modal-image">
+                            <div class="modal-header">
+                                <div class="col-md-8 toppad pull-right col-md-offset-3 ">
+                                    <p class=" text-info">Fecha y Hora
+                                        <input type="text" style=" text-align: left"/>
+
+                                    </p>
+                                </div>
+                                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                    <span aria-hidden="true">
+                                        ×
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="panel-heading text-center " >
+                                <h3>
+                                    Evidencias
+                                </h3>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="row">
+                                    <div class="col-md-12" style="margin-top: -120px;">
+                                        <img src="../assets/img/figura.jpg" class="img-responsive center-block" style="margin-left: 10px" />
+
+                                    </div>
+                                    <div class="col-md-10" style="margin-left: 60px; margin-top: 50px;">
+                                        <ul class="list-group">
+                                           
+                                            <li class="list-group-item">Observacion de la pedagoga <textarea class="form-control" rows="8" id="comment" disabled="" required="" ></textarea>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal dos -->
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content modal-image">
+                            <div class="modal-header">
+                                <div class="col-md-8 toppad pull-right col-md-offset-3 ">
+                                    <p class=" text-info">Fecha y Hora
+                                        <input type="text" style=" text-align: left"/>
+
+                                    </p>
+                                </div>
+                                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                    <span aria-hidden="true">
+                                        ×
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="panel-heading text-center " >
+                                <h3>
+                                    Evidencias
+                                </h3>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="row">
+                                    <div class="col-md-12" style="margin-top: -120px;">
+                                        <img src="../assets/img/Pintura.jpg" class="img-responsive center-block" style="margin-left: 10px" />
+
+                                    </div>
+                                    <div class="col-md-10" style="margin-left: 60px; margin-top: 50px;">
+                                        <ul class="list-group">
+                                            
+                                           <li class="list-group-item">Observacion pedagoga<textarea class="form-control" disabled="" rows="8" id="comment" required="" ></textarea>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Tres -->
+                
+                <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content modal-image">
+                            <div class="modal-header">
+                                <div class="col-md-8 toppad pull-right col-md-offset-3 ">
+                                    <p class=" text-info">Fecha y Hora
+                                        <input type="text" style=" text-align: left"/>
+
+                                    </p>
+                                </div>
+                                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                    <span aria-hidden="true">
+                                        ×
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="panel-heading text-center " >
+                                <h3>
+                                    Evidencias
+                                </h3>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="row">
+                                    <div class="col-md-12" style="margin-top: -120px;">
+                                        <img src="../assets/img/Puntillismo.jpg" class="img-responsive center-block" style="margin-left: 10px" />
+
+                                    </div>
+                                    <div class="col-md-10" style="margin-left: 60px; margin-top: 50px;">
+                                        <ul class="list-group">
+                                       <li class="list-group-item">Observacion de la pedagoga <textarea class="form-control" disabled="" rows="8" id="comment" required="" ></textarea>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal Cuatro -->
+                <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content modal-image">
+                            <div class="modal-header">
+                                <div class="col-md-8 toppad pull-right col-md-offset-3 ">
+                                    <p class=" text-info">Fecha y Hora
+                                        <input type="text" style=" text-align: left"/>
+
+                                    </p>
+                                </div>
+                                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                    <span aria-hidden="true">
+                                        ×
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="panel-heading text-center " >
+                                <h3>
+                                    Evidencias
+                                </h3>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="row">
+                                    <div class="col-md-12" style="margin-top: -120px;">
+                                        <img src="../assets/img/Triangulo.jpg" class="img-responsive center-block" style="margin-left: 10px" />
+
+                                    </div>
+                                    <div class="col-md-10" style="margin-left: 60px; margin-top: 50px;">
+                                        <ul class="list-group">
+
+                                            <li class="list-group-item">Observacion Pedagoga <textarea class="form-control" rows="8" id="comment" disabled="" required="" ></textarea>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal Cinco-->
+                <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content modal-image">
+                            <div class="modal-header">
+                                <div class="col-md-8 toppad pull-right col-md-offset-3 ">
+                                    <p class=" text-info">Fecha y Hora
+                                        <input type="text" style=" text-align: left"/>
+
+                                    </p>
+                                </div>
+                                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                    <span aria-hidden="true">
+                                        ×
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="panel-heading text-center " >
+                                <h3>
+                                    Evidencias
+                                </h3>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="row">
+                                    <div class="col-md-12" style="margin-top: -120px;">
+                                        <img src="../assets/img/Unir.jpg" class="img-responsive center-block" style="margin-left: 10px" />
+
+                                    </div>
+                                    <div class="col-md-10" style="margin-left: 60px; margin-top: 30px;">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Observacion de la pedagoga <textarea class="form-control" rows="8" id="comment" disabled="" required="" ></textarea>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- details card section starts from here -->
+            </ui:define>
+
+
+
+        </ui:composition>
+
+    </body>
+</html>
